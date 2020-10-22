@@ -83,7 +83,14 @@ $app->post('/api/login',function(Request $request, Response $response){
     if($dbemail == $email &&  $dbpass == $pass)
     {    
 
-        return $response->withJson(['success' => true]);
+        // return $response->withJson(['success' => true,'email'=>$dbemail, 'pass'=>$dbpass ]);
+
+        $object = (object) array(
+            'success'=>true,
+            'email' => $dbemail,
+            'pass' => $dbpass
+        );
+        return $response->withJson($object);
         echo "You have succesfully log in..";
     }
 

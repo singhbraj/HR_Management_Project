@@ -96,7 +96,7 @@ onSubmit=(e)=>{
 
         return (
             <div className="signup">
-                <div style={{marginTop:150}}>
+                <div style={{marginTop:100}}>
                 <h3>Signup User</h3>
                 <Form onSubmit={this.onSubmit}>
 
@@ -122,7 +122,7 @@ onSubmit=(e)=>{
               </div>
                </Form.Field>
                <Button  primary type='submit'>Signup</Button>
-               <Link  to={"/"}   primary> Already Have An Account
+               <Link  to={"/"}   className="button"> Already Have An Account
                </Link>
 
                 </Form>

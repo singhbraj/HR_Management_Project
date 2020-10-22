@@ -49,7 +49,7 @@ export default class recordList extends Component {
                 </Table.Cell>
                 <Table.Cell>
                    
-                   <Link  to={"/edit/"+this.props.obj.id}   primary> Edit
+                   <Link  to={"/edit/"+this.props.obj.id}  className="button"  > Edit
 
                    </Link>
                 

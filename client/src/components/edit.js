@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Button, Form } from 'semantic-ui-react'
+import { Button, Form } from 'semantic-ui-react';
+import {Redirect} from 'react-router-dom';
 
 
 export default class edit extends Component {
@@ -73,16 +74,25 @@ export default class edit extends Component {
     
             axios.put('http://localhost/practice/public/index.php/api/employee/update/'+this.props.match.params.id,obj)
             .then(res=>console.log(res.data));
-            this.setState({
-                isUpdate:true
-            })
+            // this.setState({
+            //     isUpdate:true
+            // })
         }
 
  
     
     
     render() {
+ 
 
+    //    const {isUpdate} = this.state;
+
+    //    if(isUpdate)
+    //    {
+    //        return(
+    //            <Redirect  to={'/view'} />
+    //        )
+    //    }
       
        
         return (

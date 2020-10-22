@@ -86,6 +86,7 @@ export default class login extends Component {
                isLogin:true
             })
         }
+        
      
     });
        }
@@ -109,8 +110,8 @@ export default class login extends Component {
       
 
         return (
-            <div style={{marginTop:150}} className="login">
-            <h3>Signin User</h3>
+            <div style={{marginTop:100}} className="login">
+            <h3>Login User</h3>
             <Form onSubmit={this.onSubmit}>
               
                <Form.Field>
@@ -136,8 +137,8 @@ export default class login extends Component {
                </Form.Field>
                
        
-               <Button  primary type='submit'>Login</Button>
-               <Link  to={"/signup"}   primary> Don't Have An Account
+               <Button  primary type='submit' >Login</Button>
+               <Link  to={"/signup"}   className="button"> Don't Have An Account
   
              </Link>
 
